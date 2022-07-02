@@ -1,0 +1,60 @@
+.main {
+    .headerWrapper {
+        display: flex;
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 25px;
+        .header {
+            display: flex;
+            width: 100%;
+            // margin: 25px 40px 15px 40px;
+            justify-content: space-between;
+            align-items: center;
+
+            .rightHeader {
+                display: flex;
+            }
+
+            .logo {
+                color: #53A548;
+                font-size: 26px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .hero {
+        width: 75vw;
+        height: 85vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .text {
+            margin-top: 23vh;
+
+            .title {
+                color: #151516;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.4;
+                margin-bottom: 18px;
+            }
+
+            .subtitle {
+                max-width: 410px;
+                color: #4d4d51;
+                font-size: 22px;
+                line-height: 1.45;
+                letter-spacing: -.4px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .img {
+            img {
+                margin-top: 5vh;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.headerWrapper {
+    display: flex;
+    width: 100vw;
+    margin-top: 25px;
+    border-bottom: 1px solid #dfe6ed;
+    padding-bottom: 25px;
+    .header {
+        display: flex;
+        width: 90vw;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .rightHeader {
+            display: flex;
+        }
+
+        .logo {
+            color: #53A548;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+}

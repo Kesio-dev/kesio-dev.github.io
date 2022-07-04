@@ -1,21 +1,10 @@
 import React from 'react';
+import Header from '../Components/Header';
 import styles from './main.module.scss'
-function App() {
+function Main() {
   return (
     <div className={styles.main}>
-      <div className={styles.headerWrapper}>
-        <div className={styles.header}>
-          <div className={styles.logo}>SYP</div>
-          <div className={styles.rightHeader}>
-            <div className="search">
-              <div className="searchIcon searchIcon_search">
-                <input className="searchInput" type="text" placeholder="Search" />
-              </div>
-            </div>
-            <a href="#" className="btn">Вход</a>
-          </div>
-        </div>
-      </div>
+      <Header />
 
       <div className={styles.hero}>
         <div className={styles.text}>
@@ -31,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

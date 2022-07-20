@@ -4,6 +4,7 @@
     margin-top: 25px;
     border-bottom: 1px solid #dfe6ed;
     padding-bottom: 25px;
+
     .header {
         display: flex;
         width: 90vw;
@@ -13,12 +14,40 @@
 
         .rightHeader {
             display: flex;
+
+            .user {
+                display: flex;
+                align-items: center;
+
+                .image {
+                    width: 40px;
+                    height: 40px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100px;
+                    }
+                }
+
+                .name {
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-right: 10px;
+                    color: #151516;
+                }
+            }
         }
 
-        .logo {
-            color: #53A548;
-            font-size: 26px;
-            font-weight: 700;
+        .leftHeader {
+            display: flex;
+            align-items: center;
+            .logo {
+                color: #53A548;
+                font-size: 26px;
+                font-weight: 700;
+                margin-right: 30px;
+            }
         }
     }
 }

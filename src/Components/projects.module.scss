@@ -5,16 +5,55 @@
     justify-content: space-between;
 
     .project {
-        width: 22%;
-        padding: 10px;
-        // box-shadow: 0px 0px 10px rgba(34, 60, 80, 0.3);
+        width: 23%;
         border-radius: 10px;
-        
+        cursor: pointer;
+        margin: 0px 10px 15px 10px;
+
         .card {
             display: flex;
             flex-direction: column;
             height: 100%;
+
+            .cardImage {
+                position: relative;
+                transition: 1s;
+
+                .cardName {
+                    position: absolute;
+                    left: 15px;
+                    bottom: 15px;
+                    color: rgb(255, 255, 255);
+                    font-weight: 700;
+                    opacity: 0;
+                    transition: .2s;
+                    z-index: 2;
+                }
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    // transition: 0.05s;
+                    border-radius: 10px;
+                }
+
+                &:hover::after {
+                    background: rgb(255, 255, 255);
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, rgba(41, 35, 35, 1) 100%);
+                }
+
+                &:hover .cardName {
+                    opacity: 1;
+                }
+            }
+
+
         }
+
         img {
             display: block;
             object-fit: cover;
@@ -22,16 +61,26 @@
             height: 250px;
             border-radius: 10px;
             max-width: 100%;
+            pointer-events: none;
         }
 
-        .name {
-            color: #151516;
-            font-weight: 500;
+        .author {
+            display: flex;
+            align-items: center;
             margin-top: 10px;
-            margin-left: 5px;
-            margin-bottom: 20px;
-            flex: 1 1 auto;
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 100px;
+            }
+
+            .name {
+                font-size: 15px;
+                font-weight: 400;
+                margin-left: 5px;
+            }
         }
+
         .description {
             color: #4d4d51;
         }
